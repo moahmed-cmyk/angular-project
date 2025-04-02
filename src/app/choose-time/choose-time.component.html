@@ -1,0 +1,322 @@
+<div class="div-3" *ngFor="let singer of savedItem; let index = index">
+
+    <div class="div-112">
+        <div class="div-1">
+            <button class="btn-1">1</button>
+            <p class="p-choose">Choose Time</p>
+        </div>
+
+        <img src="choose-time/slider-1.png" alt="no image" class="img-line-1">
+
+        <div class="div-1">
+            <button class="btn-1">2</button>
+            <p class="p-choose">Choose Seat</p>
+        </div>
+
+        <img src="choose-time/slider-2.png" alt="no image" class="img-line-1">
+
+        <div class="div-1">
+            <button class="btn-1">3</button>
+            <p class="p-choose">Checkout</p>
+        </div>
+
+        <img src="choose-time/slider-2.png" alt="no image" class="img-line-1">
+
+        <div class="div-1">
+            <button class="btn-4">4</button>
+            <p class="p-choose">Get Ticket</p>
+        </div>
+
+    </div>
+
+
+    <div class="div-4" *ngFor="let singer of savedItem; let index = index">
+        <p class="p-taylor">{{singer.name}} Concert “The Eras Tour”</p>
+
+        <img [src]="singer.concertImage" alt="No image" class="img-banner">
+
+        <div class="div-10">
+
+            <div class="div-7">
+
+                <div class="div-6">
+                    <div class="div-5">
+                        <img src="choose-time/date-2.svg" alt="no image" class="img-time">
+                        <p class="p-date"><span class="span-1">Date:</span> 3 June until 6 June, 2024</p>
+                    </div>
+                </div>
+
+                <div class="div-6">
+                    <div class="div-5">
+                        <img src="choose-time/time-2.svg" alt="no image" class="img-time">
+                        <p class="p-date"><span class="span-1"> Time:</span> 08:00 PM & 10:00 PM</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="div-11">
+                <div class="div-8">
+                    <div class="div-9">
+                        <img src="choose-time/location-1.svg" alt="no image" class="img-time" class="img-location">
+                        <p class="p-location">Location: Royal Albert Hall, London</p>
+                    </div>
+                </div>
+
+                <button class="btn-right">Get Direction <img src="choose-time/right-blu-arrow.svg" alt="no image"
+                        class="img-right"></button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="div-71">
+
+        <div class="div-12">
+            <p class="p-choose-2">Choose Date And Time</p>
+            <p class="p-all">All Available Tickets Are here.</p>
+        </div>
+
+        <div class="div-13">
+
+
+                <div class="div-17">
+                    <div class="div-14">
+                        <p class="p-date-2">{{singer?.slotOne.concertDate}}</p>
+
+                        <p class="p-day">{{singer?.slotOne.concertDay}} </p>
+
+                        <p class="p-time">{{singer?.slotOne.concertTime}} </p>
+                    </div>
+
+                    <div class="div-15">
+                        <p class="p-taylor-2">{{singer.name}}</p>
+                        <p class="p-eras">The Eras Tour</p>
+                        <p class="p-albert"> <img src="choose-time/location-1.svg" alt="no image"
+                                class="img-location-2">Royal
+                            Albert Hall</p>
+                        <p class="p-ticket"> <img src="choose-time/ticket.svg" alt="no image"
+                                class="img-ticket">{{singer?.slotOne.tickets}}</p>
+                    </div>
+
+
+                    <div class="div-16">
+                        <p class="p-from">From {{singer.price}} / person</p>
+                        <button class="btn-book-4" (click)="bookTicket(singer?.slotOne); addItem();">Book
+                            Now</button>
+                    </div>
+
+                </div>
+
+
+            <div class="div-17">
+                <div class="div-14">
+                    <p class="p-date-2">{{singer?.slotTwo.concertDate}}</p>
+
+                    <p class="p-day">{{singer?.slotTwo.concertDay}}</p>
+
+                    <p class="p-time" [ngClass]="{'pitBull':index===0}">{{singer?.slotTwo.concertTime}}</p>
+                </div>
+
+                <div class="div-15">
+                    <p class="p-taylor-2">{{singer.name}}</p>
+                    <p class="p-eras">The Eras Tour</p>
+                    <p class="p-albert"> <img src="choose-time/location-1.svg" alt="no image"
+                            class="img-location-2">Royal
+                        Albert
+                        Hall</p>
+                    <p class="p-ticket"> <img src="choose-time/ticket.svg" alt="no image"
+                            class="img-ticket">{{singer?.slotTwo.tickets}}
+                    </p>
+                </div>
+
+                <div class="div-16">
+                    <p class="p-from">From {{singer.price}} / person</p>
+                    <button class="btn-book-4" (click)="bookTicket(singer?.slotTwo); addItem();showToast1()">Book
+                        Now</button>
+                </div>
+
+            </div>
+
+            <div class="div-17">
+                <div class="div-14">
+                    <p class="p-date-2">{{singer?.slotThree.concertDate}}</p>
+
+                    <p class="p-day">{{singer?.slotThree.concertDay}}</p>
+
+                    <p class="p-time">{{singer?.slotThree.concertTime}}</p>
+                </div>
+
+                <div class="div-15">
+                    <p class="p-taylor-2">{{singer.name}}</p>
+                    <p class="p-eras">The Eras Tour</p>
+                    <p class="p-albert"> <img src="choose-time/location-1.svg" alt="no image"
+                            class="img-location-2">Royal
+                        Albert
+                        Hall</p>
+                    <p class="p-ticket"> <img src="choose-time/ticket.svg" alt="no image"
+                            class="img-ticket">{{singer?.slotThree.tickets}}
+                    </p>
+                </div>
+
+                <div class="div-16">
+                    <p class="p-from">From {{singer.price}} / person</p>
+                    <button class="btn-book-4" (click)="bookTicket(singer?.slotThree); addItem();showToast1()">Book
+                        Now</button>
+                </div>
+
+            </div>
+
+            <div class="div-17">
+                <div class="div-14">
+                    <p class="p-date-2">{{singer?.slotFour.concertDate}}</p>
+
+                    <p class="p-day">{{singer?.slotFour.concertDay}}</p>
+
+                    <p class="p-time">{{singer?.slotFour.concertTime}}</p>
+                </div>
+
+                <div class="div-15">
+                    <p class="p-taylor-2">{{singer?.name}}</p>
+                    <p class="p-eras">The Eras Tour</p>
+                    <p class="p-albert"> <img src="choose-time/location-1.svg" alt="no image"
+                            class="img-location-2">Royal
+                        Albert
+                        Hall</p>
+                    <p class="p-ticket"> <img src="choose-time/ticket.svg" alt="no image"
+                            class="img-ticket">{{singer?.slotFour.tickets}}
+                    </p>
+                </div>
+
+
+                <div class="div-16">
+                    <p class="p-from">From {{singer.price}} / person</p>
+                    <button class="btn-book-4" (click)="bookTicket(singer?.slotFour); addItem();showToast1()">Book
+                        Now</button>
+                </div>
+
+            </div>
+
+            <div class="div-17">
+                <div class="div-14">
+                    <p class="p-date-2">{{singer?.slotFive.concertDate}}</p>
+
+                    <p class="p-day">{{singer?.slotFive.concertDay}}</p>
+
+                    <p class="p-time">{{singer?.slotFive.concertTime}}</p>
+                </div>
+
+                <div class="div-15">
+                    <p class="p-taylor-2">{{singer?.name}}</p>
+                    <p class="p-eras">The Eras Tour</p>
+                    <p class="p-albert"> <img src="choose-time/location-1.svg" alt="no image"
+                            class="img-location-2">Royal
+                        Albert
+                        Hall</p>
+                    <p class="p-ticket"> <img src="choose-time/ticket.svg" alt="no image"
+                            class="img-ticket">{{singer?.slotFive.tickets}}!
+                    </p>
+                </div>
+
+                <div class="div-16">
+                    <p class="p-from">From {{singer.price}} / person</p>
+                    <button class="btn-book-4" (click)="bookTicket(singer?.slotFive); addItem();showToast1()">Book
+                        Now</button>
+                </div>
+
+            </div>
+
+            <div class="div-17">
+                <div class="div-14">
+                    <p class="p-date-2">{{singer?.slotSix.concertDate}}</p>
+
+                    <p class="p-day">{{singer?.slotSix.concertDay}}</p>
+
+                    <p class="p-time">{{singer?.slotSix.concertTime}}</p>
+                </div>
+
+                <div class="div-15">
+                    <p class="p-taylor-2">{{singer?.name}}</p>
+                    <p class="p-eras">The Eras Tour</p>
+                    <p class="p-albert"> <img src="choose-time/location-1.svg" alt="no image"
+                            class="img-location-2">Royal
+                        Albert
+                        Hall</p>
+                    <p class="p-ticket"> <img src="choose-time/ticket.svg" alt="no image"
+                            class="img-ticket">{{singer?.slotSix.tickets}}!
+                    </p>
+                </div>
+
+
+                <div class="div-16">
+                    <p class="p-from">From {{singer.price}} / person</p>
+                    <button class="btn-book-4" (click)="bookTicket(singer?.slotSix); addItem();showToast1()">Book
+                        Now</button>
+                </div>
+
+            </div>
+
+            <div class="div-17">
+                <div class="div-14">
+                    <p class="p-date-2">{{singer?.slotSeven.concertDate}}</p>
+
+                    <p class="p-day">{{singer?.slotSeven.concertDate}} </p>
+
+                    <p class="p-time">{{singer?.slotSeven.concertTime}}</p>
+                </div>
+
+                <div class="div-15">
+                    <p class="p-taylor-2">{{singer?.name}}</p>
+                    <p class="p-eras">The Eras Tour</p>
+                    <p class="p-albert"> <img src="choose-time/location-1.svg" alt="no image"
+                            class="img-location-2">Royal
+                        Albert
+                        Hall</p>
+                    <p class="p-ticket"> <img src="choose-time/ticket.svg" alt="no image"
+                            class="img-ticket">{{singer?.slotSeven.tickets}}
+                    </p>
+                </div>
+
+
+                <div class="div-16">
+                    <p class="p-from">From {{singer.price}}/ person</p>
+                    <button class="btn-book-4" (click)="bookTicket(singer?.slotSeven); addItem();showToast1()">Book
+                        Now</button>
+                </div>
+
+            </div>
+
+            <div class="div-17">
+                <div class="div-14">
+                    <p class="p-date-2">{{singer?.slotEight.concertDate}}</p>
+
+                    <p class="p-day">{{singer?.slotEight.concertDay}} </p>
+
+                    <p class="p-time">{{singer?.slotEight.concertTime}}</p>
+                </div>
+
+                <div class="div-15">
+                    <p class="p-taylor-2">{{singer?.name}}</p>
+                    <p class="p-eras">The Eras Tour</p>
+                    <p class="p-albert"> <img src="choose-time/location-1.svg" alt="no image"
+                            class="img-location-2">Royal
+                        Albert
+                        Hall</p>
+                    <p class="p-ticket"> <img src="choose-time/ticket.svg" alt="no image"
+                            class="img-ticket">{{singer?.slotEight.tickets}}
+                    </p>
+                </div>
+
+
+                <div class="div-16">
+                    <p class="p-from">From {{singer.price}} / person</p>
+                    <button class="btn-book-4" (click)="bookTicket(singer?.slotEight); addItem();showToast1()">Book
+                        Now</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

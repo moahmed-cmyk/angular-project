@@ -1,0 +1,331 @@
+.div-87 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-88 {
+    margin-inline: auto;
+    max-width: 79rem;
+    position: relative;
+}
+
+.img-logo {
+    max-width: 12rem;
+}
+
+.p-who {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.p-ticket-5 {
+    color: #505050;
+    font-size: 13px;
+    font-weight: 600;
+    max-width: 17rem;
+}
+
+.p-who {
+    margin-top: 40px;
+}
+
+.p-contact {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 62px;
+}
+
+
+.p-gmail {
+    color: #505050;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.p-ticket-6 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+
+.p-about {
+    color: #505050;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.div-90 {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: solid darkgrey 1px;
+    padding-bottom: 42px;
+}
+
+.p-about {
+    padding-top: 8px;
+}
+
+.div-92 {
+    display: flex;
+    gap: 5rem;
+}
+
+.input-1 {
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    border: solid darkgray 1px;
+    padding-left: 40px;
+    padding-block: 11px;
+    border-radius: 10px;
+}
+
+.img-gmail {
+    position: absolute;
+    top: 16px;
+    max-width: 18px;
+    left: 16px;
+}
+
+.div-95 {
+    position: relative;
+}
+
+.input-1 {
+    width: 22rem;
+}
+
+.p-join {
+    color: #505050;
+    font-weight: 500;
+    font-size: 23px;
+    max-width: 26rem;
+}
+
+.div-94 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 41px;
+    border-bottom: solid darkgrey 1px;
+    margin-bottom: 41px;
+    padding-bottom: 41px;
+}
+
+.twenr {
+    color: #505050;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.p-twen {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.div-100 {
+    display: flex;
+    gap: 20px;
+}
+
+.div-96 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.img-logo-4 {
+    max-width: 23px;
+    height: fit-content;
+}
+
+
+.img-logo-4:hover{
+    max-width: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.div-101 {
+    display: flex;
+    gap: 30px;
+}
+
+.div-90 {
+    margin-top: 2rem;
+}
+
+.img-wave {
+    position: absolute;
+    top: 731px;
+    max-width: 20rem;
+    left: -125px;
+    display: block;
+}
+
+.img-wave-2 {
+    position: absolute;
+    top: 731px;
+    right: -125px;
+    max-width: 20rem;
+    display: block;
+}
+
+@media(max-width:1000px) {
+    .img-wave {
+        left: 6px;
+    }
+
+    .img-one {
+        max-width: 7rem;
+    }
+
+    .div-87 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-90 {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+
+    .div-92 {
+        margin-top: 40px;
+    }
+
+
+    .div-94 {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .div-94 {
+        gap: 19px;
+    }
+
+    .div-96 {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .div-89 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .p-ticket-5{
+        text-align: center;
+    }
+
+    .div-92{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .div-93{
+        text-align: center;
+    }
+
+    .div-94{
+        text-align: center;
+    }
+
+    .p-join{
+        max-width: 32rem;
+    }
+}
+
+@media(max-width:640px){
+    .img-one{
+        max-width: 6rem;
+    }
+
+    .img-logo{
+        
+    max-width: 10rem;
+
+    }
+
+    .p-who{
+        font-size: 21px;
+    }
+
+    .p-ticket-5{
+        font-size: 11px;
+        max-width: 14rem;
+    }
+
+    .p-contact{
+        font-size: 18px;
+    }
+
+    .p-gmail{
+        font-size: 12px;
+    }
+
+    .p-ticket-6{
+        font-size: 17px;
+    }
+
+    .p-about{
+        font-size: 12px;
+    }
+
+    .p-join{
+        font-size: 14px;
+    }
+
+    .input-1{
+        outline: none;
+        font-size: 11px;
+        font-weight: 500;
+        border: solid darkgray 1px;
+        padding-left: 40px;
+        padding-block: 5px;
+        border-radius: 10px;
+        width: 12rem;
+    }
+
+    .img-gmail{
+        top: 10px;
+        max-width: 13px;
+        left: 22px;
+    }
+
+    .div-94{
+        align-items: center;
+    }
+
+    .p-twenr{
+        font-size: 10px;
+    }
+
+    .p-twen{
+        
+        font-size: 12px;
+    }
+
+    .img-logo-4{
+        max-width: 20px;
+    }
+
+    .div-96{
+        gap: 29px;
+    }
+
+    .div-92{
+        gap: 2rem;
+    }
+
+    .p-contact{
+        margin-top: 32px;
+    }
+}

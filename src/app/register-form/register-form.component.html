@@ -1,0 +1,110 @@
+<main>
+    <form [formGroup]="userForm" class="div-4">
+        <div class="div-3">
+            <p class="p-email">Name</p>
+            <div class="div-5">
+                <img src="landing-page-assets/user-edit.svg" alt="" class="img-gmail">
+
+                <input type="text" placeholder="Enter your First Name" formControlName="Name" class="input-1"
+                    (input)="checkInput()">
+
+                <p class="text" *ngIf="(isSubmitted && userForm.get('Name')?.invalid) || userForm.get('Name')?.touched">
+                    <span *ngIf="userForm.get('Name')?.hasError('required')">The field is required</span>
+                </p>
+
+                <img class="x-btn" src="assets/x-btn.svg" *ngIf="showClearButton" (click)="clearInput()">
+            </div>
+
+        </div>
+
+        <div class="div-3">
+            <p class="p-email">Email</p>
+            <div class="div-5">
+                <img src="landing-page-assets/gmail.svg" alt="" class="img-gmail-2">
+
+                <input type="email" placeholder="Enter your email" formControlName="email" class="input-1"
+                    (input)="checkInputtwo()">
+
+                <p class="text"
+                    *ngIf="(isSubmitted && userForm.get('email')?.invalid) || userForm.get('email')?.touched">
+                    <span *ngIf="userForm.get('email')?.hasError('required')">Enter your Email</span>
+                </p>
+
+                <img class="x-btn" src="assets/x-btn.svg" *ngIf="showClearButton" (click)="clearInputthree()">
+            </div>
+
+        </div>
+
+
+
+
+        <div class="div-3">
+            <p class="p-email">Password</p>
+            <div class="div-5">
+                <img src="assets/lock-logo.svg" alt="" class="img-lock">
+
+                <input [type]="isPasswordVisible ? 'text' : 'password'" placeholder="Create a password"
+                    formControlName="password" class="input-1">
+
+                <p class="text"
+                    *ngIf="(isSubmitted && userForm.get('password')?.invalid) || userForm.get('password')?.touched">
+                    <span *ngIf="userForm.get('password')?.hasError('required')">Must be at least 8 characters</span>
+                    <span *ngIf="userForm.get('password')?.hasError('minlength')">Must be at least 8 characters</span>
+                </p>
+
+                <img class="img-hide" [src]="isPasswordVisible ? 'choose-time/eye-solid.svg' : 'assets/hide-logo.svg'"
+                    (click)="togglePasswordVisibility()" alt="Toggle visibility">
+            </div>
+
+        </div>
+
+
+        <div class="div-3">
+            <p class="p-email">Confirm Password</p>
+            <div class="div-5">
+                <img src="assets/lock-logo.svg" alt="" class="img-lock">
+                <input type="password" placeholder="Confirm your password " formControlName="password" class="input-1">
+                @if ((isSubmitted && userForm.get('password')?.invalid)|| userForm.get('password')?.touched){
+                @if (userForm.get('password')?.hasError('required')) {
+                <p class="text"> Confirm your password</p>
+                }
+
+                @if (userForm.get('password')?.hasError('minlength')) {
+                <p class="text"> Must be atleast 8 character</p>
+                }
+
+                }
+
+                <img class="img-hide" [src]="isPasswordVisible ? 'choose-time/eye-solid.svg' : 'assets/hide-logo.svg'"
+                    (click)="togglePasswordVisibility()" alt="Toggle visibility">
+            </div>
+        </div>
+
+        <div class="div-6">
+            <div class="div-7">
+                <input type="radio" class="input-2">
+                <p class="p-remember">Remember me</p>
+            </div>
+
+            <p class="p-password">Forgot Password</p>
+        </div>
+        <button class="btn-login" (click)="addDetail()">Log in</button>
+        <div class="div-8">
+            <img src="assets/google.png" class="img-google" alt="">
+            <button class="btn-google">Sign in with Google</button>
+        </div>
+        <p class="p-dont">Don’t have an account? <span class="span-1">Sign Up</span></p>
+
+
+    </form>
+
+    <div class="div-9">
+        <img src="assets/Frame-background.png" alt="" class="img-back">
+
+        <div class="div-10">
+            <p class="p-welcome">Welcome Back </p>
+            <p class="p-access">Access your personal account by logging in</p>
+        </div>
+        <img src="assets/Frame-banner.png" alt="" class="banner">
+    </div>
+</main>

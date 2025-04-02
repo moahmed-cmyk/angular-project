@@ -1,0 +1,44 @@
+<div class="main-container">
+    <img src="choose-time/fahad.png" alt="no image" class="banner">
+    <div class="div-25">
+        <nav> 
+            <div class="div-1">
+                <p class="home" routerLink="/">Home</p>
+                <p class="home" routerLink="/">Concerts</p>
+                <p class="home" routerLink="/">Singers</p>
+            </div>
+        
+            <p class="navigate  text-gray-800" (click)="toggleNavbar()">&#9776; </p>
+        
+            <div class="fixed z-23 top-0 left-0 w-64 h-full bg-black text-white transform transition-transform duration-300 min-[640px]:hidden"
+                [ngClass]="{'translate-x-0': isActive, '-translate-x-full': !isActive} ">
+                <div class="p-4">
+                    <button (click)="toggleNavbar()" class="text-3xl text-white">×</button>
+                </div>
+        
+                <ul class="mt-8 space-y-7 pl-5">
+                    <li><a href="#" class="text-md text-white hover:cursor-pointer" routerLink="/">Home</a></li>
+                    <li><a href="#" class="text-md text-white hover:cursor-pointer">Concerts</a>
+                    </li>
+                    <li><a href="#" class="text-md text-white hover:cursor-pointer">Singers</a></li>
+                    <li><a href="#" class="text-md text-white hover:cursor-pointer" routerLink="/login">Login/Register</a></li>
+                </ul>
+        
+            </div>
+        
+            <div>
+                <img src="landing-page-assets/header-Website Logos.svg" alt="no image" class="logo">
+            </div>
+        
+            <div class="div-2">
+                <div class="div-72">
+                    <img src="landing-page-assets/header-cart.svg" alt="no image" class="img-cart" routerLink="reservation">
+                    <button class="btn-0">{{service.cartItemsCount()}}</button>
+        
+                </div>
+                <button class="login-btn" routerLink="/login"> <img src="landing-page-assets/Vector.svg" class="img-user"
+                        alt="no image">Login/Register</button>
+            </div>
+        </nav>
+    </div>
+</div>

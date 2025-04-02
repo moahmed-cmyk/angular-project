@@ -1,0 +1,527 @@
+<div class="div-1">
+    <img src="choose-time/banner-2.png" alt="no image" class="banner">
+
+    <div class="div-2">
+        <p class="p-book">Book Tickets Of Your Favorite Singers!</p>
+        <p class="p-make">Make Sure Don’t Miss These 5 Up Coming's Concerts!</p>
+    </div>
+
+    <div class="div-11">
+        <div class="div-3">
+            <img src="landing-page-assets/singer.svg" alt="no image" class="img-singer">
+            <input type="text" placeholder="Type a singer name" class="input-1">
+            <img src="landing-page-assets/singer-x-icon.png" alt="no image" class="img-x">
+        </div>
+
+        <div class="div-12">
+            <img src="landing-page-assets/date.svg" alt="no image" class="img-date">
+            <input type="text" placeholder="Date" class="input-2">
+            <img src="landing-page-assets/down-arrow.svg" alt="no image" class="img-down">
+        </div>
+
+        <div class="div-13">
+            <img src="landing-page-assets/location-icon.svg" alt="no image" class="img-location">
+            <input type="text" placeholder="Location" class="input-3">
+            <img src="landing-page-assets/down-arrow.svg" alt="no image" class="down-arrow-1">
+        </div>
+
+        <button class="btn-final">Find Ticket</button>
+
+    </div>
+
+    <div class="div-5">
+        <div *ngFor="let singer of singers; let index = index" class="div-4"
+            [ngClass]="{'hello-22':index===5,'hello-23':index===4,'hello-24':index===3}">
+            <div class="div-4">
+                <img [src]="singer.image" alt="no image" class="enrique"
+                    [ngClass]="{'hello-6':index===1,'hello-7':index===2}">
+            </div>
+            <div class="div-14"
+                [ngClass]="{'hello-2':index===2,'hello':index===1,'hello-3':index===3,'hello-4':index===4,'hello-5':index===5,'hello-8':index===1,'hello-11':index===4,'hello-12':index===5}">
+                <p class="p-taylor" [ngClass]="{'highlight': index === 2,}">{{singer.name}}</p>
+                <p class="p-manchester">{{singer.cityName}} <span></span> <span class="date-1">{{singer.date}}</span>
+                </p>
+                <p class="price">{{singer.price}}</p>
+                <img src="landing-page-assets/Group 102.png" alt="no image" class="group">
+                <img src="landing-page-assets/Group 102.png" alt="no image" class="group-2">
+
+                <button class="btn-book" (click)="addSinger(singer);" routerLink="chooseTime">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="div-15">
+    <p class="p-our">Our Benefits</p>
+    <p class="p-we">we promise users with the standard of these 4 services</p>
+
+</div>
+<div class="div-17">
+
+    <div class="div-16">
+        <img src="landing-page-assets/install-payment.png" alt="no image" class="img-online-2">
+        <p class="p-install-2">Instalment Payment!</p>
+        <p class="p-you">You can pay a ticket in 2 portions
+            throughout a fixed period of time.
+            Start invoicing for free.</p>
+    </div>
+
+    <div class="div-16">
+        <img src="landing-page-assets/booking.png" alt="no image" class="img-booking">
+        <p class="p-install">Online Booking!</p>
+        <p class="p-you">You can pay a ticket in 2 portions
+            throughout a fixed period of time.
+            Start invoicing for free.</p>
+    </div>
+
+    <div class="div-16">
+        <img src="landing-page-assets/refund.png" alt="no image" class="img-refund">
+        <p class="p-install">Refundable Tickets!</p>
+        <p class="p-you">You can pay a ticket in 2 portions
+            throughout a fixed period of time.
+            Start invoicing for free.</p>
+    </div>
+
+    <div class="div-16">
+        <img src="landing-page-assets/cheap.png" alt="no image" class="img-online">
+        <p class="p-install">Cheapest Tickets!</p>
+        <p class="p-you">You can pay a ticket in 2 portions
+            throughout a fixed period of time.
+            Start invoicing for free.</p>
+    </div>
+</div>
+
+<div class="div-18">
+    <div class="div-19">
+        <div class="div-21">
+            <p class="p-time">Time is Running Out!</p>
+            <p class="p-we">Explore nearby concerts and events here.</p>
+        </div>
+
+        <div class="div-20">
+            <img src="landing-page-assets/left-arrow.png" alt="no image" class="img-arrow">
+            <img src="landing-page-assets/right-arrow.png" alt="no image" class="img-arrow">
+        </div>
+    </div>
+
+</div>
+
+<div class="div-22">
+    <div *ngFor="let timeEndingEvent of timeEndingEvents; let index = index" class="div-26">
+
+        <div class="div-31">
+            <div class="div-24">
+                <img [src]="timeEndingEvent.image" alt="no image" class="ariana" [ngClass]="{'game-1':index===3}">
+                <div class="div-28" [ngClass]="{'game':index===3}">
+                    <div class="div-30">
+                        <img src="landing-page-assets/clock.svg" alt="no image" class="img-clock">
+                        <p class="p-time-2">Time to end</p>
+                    </div>
+
+                    <p class="day">{{timeEndingEvent.days}}<span class="time-new">{{timeEndingEvent.time}} </span></p>
+
+                </div>
+            </div>
+            <div class="div-25" [ngClass]="{'game-3':index===3}">
+                <div class="div-27">
+                    <p class="p-ariana">{{timeEndingEvent.name}}</p>
+                    <p class="date-2">{{timeEndingEvent.date}}<span class="p-london">{{timeEndingEvent.cityName}}</span>
+                    </p>
+                    <p class="price-2">{{timeEndingEvent.price}}</p>
+                    <img src="landing-page-assets/Group 102.png" alt="no image" class="group-3">
+                    <img src="landing-page-assets/Group 102.png" alt="no image" class="group-4">
+
+                </div>
+
+                <button class="btn-book-2" routerLink="timeEnding" (click)="timeEvent(timeEndingEvent)"
+                    [ngClass]="{'game-4':index===3}">Book Now</button>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="div-32">
+    <div class="div-33">
+        <p class="p-easy">4 Easy Steps To Buy a Ticket!</p>
+        <p class="p-get">Get Familiar with our 4 easy working process</p>
+        <button class="btn-buy">Buy Ticket</button>
+        <img src="landing-page-assets/right-arrow-2.svg" alt="no image" class="img-right">
+    </div>
+
+    <div class="div-35">
+
+        <div class="div-34">
+            <img src="landing-page-assets/choose.png" alt="no image" class="img-choose">
+            <p class="p-choose">Choose A Concert</p>
+            <p class="p-see">You can see concert tickets in our website and check which one is good for you. </p>
+        </div>
+
+        <div class="div-34">
+            <img src="landing-page-assets/choose-date.png" alt="no image" class="img-date-10">
+            <p class="p-choose">Choose Date & Time</p>
+            <p class="p-see">You Can check date and time of your favorite concert in our website </p>
+        </div>
+
+        <div class="div-34">
+            <img src="landing-page-assets/pay.png" alt="no image" class="img-choose">
+            <p class="p-choose">Pay Your Bill</p>
+            <p class="p-see">After choosing your date and time and your preferred seat you can pay ticket online </p>
+        </div>
+
+        <div class="div-34">
+            <img src="landing-page-assets/download.png" alt="no image" class="img-download">
+            <p class="p-choose">Download Your Ticket!</p>
+            <p class="p-see">After completing checkout process you can download your ticket and get ready for concert
+            </p>
+        </div>
+
+        <img src="landing-page-assets/waves-spring.png" alt="no image" class="img-spring">
+    </div>
+
+
+</div>
+
+<div>
+    <div class="div-18">
+        <div class="div-19">
+            <div class="div-21">
+                <p class="p-time">Upcoming Concerts</p>
+                <p class="p-we">The best concerts will be held soon!</p>
+            </div>
+
+            <div class="div-20">
+                <img src="landing-page-assets/left-arrow.png" alt="no image" class="img-arrow">
+                <img src="landing-page-assets/right-arrow.png" alt="no image" class="img-arrow">
+            </div>
+        </div>
+
+
+        <div class="div-36">
+            <div *ngFor="let upcomingConcert of upcomingConcerts; let index = index" class="div-37">
+
+                <div class="div-38">
+                    <div class="div-39">
+                        <img [src]="upcomingConcert.image" alt="no image" class="sheeran">
+                        <img src="landing-page-assets/frame-black.png" alt="no image" class="img-frame"
+                            [ngClass]="{'pitBull':index===2}">
+                        <div class="div-42">
+                            <p class="p-coming">Coming soon</p>
+                            <p class="p-november">{{upcomingConcert.day}}</p>
+                        </div>
+
+                    </div>
+                    <div class="div-40">
+                        <div class="div-41">
+                            <p class="p-sheeran">{{upcomingConcert.name}}</p>
+                            <p class="date-3">{{upcomingConcert.date}}<span
+                                    class="p-paris">{{upcomingConcert.cityName}}</span>
+                            </p>
+                            <img src="landing-page-assets/Group 102.png" alt="no image" class="group-5">
+                            <img src="landing-page-assets/Group 102.png" alt="no image" class="group-6">
+
+                        </div>
+
+                        <button class="btn-detail">View Details</button>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="div-43">
+    <div class="div-44">
+        <p class="p-subscribe">Subscribe our news letter</p>
+        <p class="p-for">For weekly later news and offers about music world, Join us here.</p>
+        <div class="div-45">
+
+            <input type="email" name="" id="" placeholder="Enter your email" class="input-4">
+            <img src="landing-page-assets/gmail.svg" alt="no image" class="img-gmail">
+        </div>
+        <button class="btn-subs">Subscribe <img src="landing-page-assets/right-arrow-2.svg" alt="no image"
+                class="img-subs"></button>
+    </div>
+
+    <div class="div-56">
+        <div class="div-49">
+
+            <div class="div-46">
+                <img src="landing-page-assets/newsletter-taylor.png" alt="" class="banner-taylor">
+                <p class="p-taylor-2">Taylor Swift in Biggest World Tour</p>
+                <p class="p-lorem">Lorem ipsum dolor sit amet consectetur. A vivamus donec bibendum massa erat the
+                    ultrices nulla. Velit euismod gravida...</p>
+                <div class="div-48">
+                    <img src="landing-page-assets/user-marian.svg" alt="no image" class="img-jonathan">
+                    <div class="div-47">
+                        <p class="p-jonathan">Marian Ed</p>
+                        <p class="p-date">June 13, 2024. <span class="p-time-3">10 min</span> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-46">
+                <img src="landing-page-assets/newsletter-royal.png" alt="no image" class="banner-taylor">
+                <p class="p-taylor-2">Royal Albert Hall New Events</p>
+                <p class="p-lorem-2">Lorem ipsum dolor sit amet consectetur. A vivamus donec bibendum massa erat the
+                    ultrices nulla. Velit euismod gravida...</p>
+                <div class="div-50">
+                    <img src="landing-page-assets/user-jonathan.svg" alt="no image" class="img-jonathan">
+                    <div class="div-47">
+                        <p class="p-jonathan">Jonathan Wills</p>
+                        <p class="p-date">July 17, 2024. <span class="p-time-3">5 min</span> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-46">
+                <img src="landing-page-assets/newsletter-yanni.png" alt="no image" class="banner-taylor">
+                <p class="p-taylor-2">Yanni Will Be in London </p>
+                <p class="p-lorem-2">Lorem ipsum dolor sit amet consectetur. A vivamus donec bibendum massa erat the
+                    ultrices nulla. Velit euismod gravida...</p>
+                <div class="div-50">
+                    <img src="landing-page-assets/user-jack.svg" alt="no image" class="img-jonathan">
+                    <div class="div-47">
+                        <p class="p-jonathan">Jack Nikelson</p>
+                        <p class="p-date">May 08, 2024. <span class="p-time-3">7 min</span> </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+<div class="div-54">
+    <div class="div-55">
+        <p class="p-what-2"> What People Think About Us</p>
+        <p class="p-word">Words of praise from others about our presence.
+            You can read and also write about us here.</p>
+    </div>
+
+    <div class="div-57">
+        <div class="div-58">
+            <div>
+                <img src="landing-page-assets/doublequotes.svg" alt="" class="img-double">
+                <p class="p-meme">We got tickets for Taylor Swift when noone else could. We had the best time ever at
+                    teh concert.Thanks Ticketer, your reselling site made it possible to have what seemed impossible!
+                    Date of experience: 10 July 2024</p>
+            </div>
+
+            <div class="div-z">
+                <img src="landing-page-assets/user-emily.svg" alt="no image" class="img-emily">
+                <div class="div-59">
+                    <p class="p-marian">Emily</p>
+                    <p class="p-date-3">Manchester<span class="p-time-5">,UK</span> </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="div-58">
+            <div>
+                <img src="landing-page-assets/doublequotes.svg" alt="no image" class="img-double">
+                <p class="p-meme">We got tickets for Taylor Swift when noone else could. We had the best time ever at
+                    teh concert.Thanks Ticketer, your reselling site made it possible to have what seemed impossible!
+                    Date of experience: 10 July 2024</p>
+            </div>
+
+            <div class="div-z">
+                <img src="landing-page-assets/user-william.png" alt="no image" class="img-emily">
+                <div class="div-59">
+                    <p class="p-marian">William</p>
+                    <p class="p-date-3">Birmingham<span class="p-time-5">,UK</span> </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="div-58">
+            <div>
+                <img src="landing-page-assets/doublequotes.svg" alt="no image" class="img-double">
+                <p class="p-meme">I had such a great experience!!! I bought an eras tour ticket and they promised to
+                    transfer it until the upcoming concert which is 10 days away. I got the ticket the day after
+                    Date of experience: 31 July 2024</p>
+            </div>
+
+            <div class="div-z">
+                <img src="landing-page-assets/user-daisy.svg" alt="no image" class="img-emily">
+                <div class="div-59">
+                    <p class="p-marian">Daisy</p>
+                    <p class="p-date-3">Liverpool<span class="p-time-5"> , UK</span> </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="div-58">
+            <div>
+                <img src="landing-page-assets/doublequotes.svg" alt="no image" class="img-double">
+                <p class="p-meme">The customer rep was really friendly and helped me resolve the issue of mobile
+                    transfer tickets. He even gave me a call back once .
+                    Date of experience: 01 August 2024
+                </p>
+            </div>
+
+            <div class="div-z">
+                <img src="landing-page-assets/sophie.svg" alt="no image" class="img-emily">
+                <div class="div-59">
+                    <p class="p-marian">Sophie
+                    </p>
+                    <p class="p-date-3">Oxford<span class="p-time-5">,UK</span> </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="div-58">
+            <div>
+                <img src="landing-page-assets/doublequotes.svg" alt="no image" class="img-double">
+                <p class="p-meme">Thank you Ticketer. It explained clearly what I needed to do to ensure the process
+                    went smoothly and responded quickly to the issues I needed help with.
+                    Date of experience: 01 August 2024</p>
+            </div>
+
+            <div class="div-z">
+                <img src="landing-page-assets/user-james.svg" alt="no image" class="img-emily">
+                <div class="div-59">
+                    <p class="p-marian">James
+                    </p>
+                    <p class="p-date-3">Porstmouth<span class="p-time-5">,UK</span> </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="div-58">
+            <div>
+                <img src="landing-page-assets/doublequotes.svg" alt="no image" class="img-double">
+                <p class="p-meme">Called couple of days ago. Agent Marceline was extremely helpful and extremely nice. I
+                    mean stubhub sucks but at least they got good employees. Xoxo
+                    Date of experience: 23 August 2024</p>
+            </div>
+
+            <div class="div-z">
+                <img src="landing-page-assets/user-elisa.svg" alt="no image" class="img-emily">
+                <div class="div-59">
+                    <p class="p-marian">Eliza</p>
+                    <p class="p-date-3">York<span class="p-time-5">, UK</span> </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="div-60">
+        <button class="btn-read"><img src="landing-page-assets/star.svg" alt="no image" class="img-star">Read All
+            Review</button>
+        <button class="btn-leave"><img src="landing-page-assets/pencil.svg" alt="no image" class="img-star">Leave a
+            comment</button>
+
+    </div>
+</div>
+
+
+<div class="div-61">
+    <div class="div-62">
+        <p class="p-frequent">Frequent ly Asked Questions</p>
+        <div class="div-63">
+            <img src="landing-page-assets/Frame-gmail.png" alt="no image" class="img-one">
+            <p class="p-help">helpcenterticketer.com</p>
+        </div>
+
+        <div class="div-64">
+            <img src="landing-page-assets/Frame-phone.png" alt="no image" class="img-two">
+            <p class="p-number">(010) 123-4567</p>
+
+        </div>
+
+        <div class="div-65">
+            <p class="p-still">Still Have Questions?</p>
+            <p class="p-cant">Can’t find the answer you’re looking for? Please contact our help center.</p>
+            <button class="btn-contact">Contact Us</button>
+        </div>
+    </div>
+
+    <div class="div-69">
+
+        <div class="div-66">
+            <div class="div-67">
+                <div class="div-68">
+                    <p class="p-i">I haven’t received any order confirmation yet. Did my booking go through? </p>
+                    <p class="p-lorem-3">Lorem ipsum dolor sit amet consectetur. Eleifend nunc habi loremut egestas.
+                        Convallis praesent egestas suscipit hendrerit sem eualiquet feugiat. Amet vulputate rhoncus
+                        falectus duis in ultricies pharetra.</p>
+                </div>
+                <img src="landing-page-assets/uproundedarrow.svg" alt="no image" class="img-up">
+            </div>
+        </div>
+
+
+        <div class="div-66">
+            <div class="div-70">
+                <div class="div-68">
+                    <p class="p-i">I am not able/do not want to attend an already booked event for personal reasons. Is
+                        there a possibility to cancel/rebook the tickets?</p>
+                </div>
+                <img src="landing-page-assets/uproundedarrow.svg" alt="no image" class="img-up">
+            </div>
+        </div>
+
+        <div class="div-66">
+            <div class="div-70">
+                <div class="div-68">
+                    <p class="p-i">I lost my e-Ticket. What can I do? </p>
+                </div>
+                <img src="landing-page-assets/uproundedarrow.svg" alt="no image" class="img-up">
+            </div>
+        </div>
+
+        <div class="div-66">
+            <div class="div-70">
+                <div class="div-68">
+                    <p class="p-i">An event was canceled/postponed/relocated, and I am not able/do not want to attend
+                        the event. Is it possible to cancel my tickets? </p>
+                </div>
+                <img src="landing-page-assets/uproundedarrow.svg" alt="no image" class="img-up">
+            </div>
+        </div>
+
+        <div class="div-66">
+            <div class="div-70">
+                <div class="div-68">
+                    <p class="p-i">I’ve already ordered tickets and now want to add another one. Is it possible yet to
+                        sit together? </p>
+                </div>
+                <img src="landing-page-assets/uproundedarrow.svg" alt="no image" class="img-up">
+            </div>
+        </div>
+
+        <button class="btn-read-2">Read More <img src="landing-page-assets/blue-arrow-right.svg"
+                alt="no image"></button>
+
+    </div>
+
+</div>

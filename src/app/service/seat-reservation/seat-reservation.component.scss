@@ -1,0 +1,593 @@
+.p-taylor {
+    color: #000000;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 17px;
+}
+
+.img-banner {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.p-none {
+    color: #222222;
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 13px;
+}
+
+.p-none-2 {
+    color: #505050;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 7px;
+}
+
+.div-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-inline: auto;
+    max-width: 81rem;
+    padding-inline: 5px;
+}
+
+.div-73 {
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.div-74 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: solid darkgray 1px;
+    padding-inline: 11px;
+    padding-block: 3px;
+    border-radius: 5px;
+}
+
+.dollor {
+    border-right: solid darkgray 1px;
+    padding-right: 8px;
+    font-weight: 500;
+}
+
+.p-ticket-2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.p-ticket-3 {
+    font-weight: 500;
+    font-size: 17px;
+    font-size: 18px;
+}
+
+.div-main {
+    display: flex;
+    gap: 28px;
+}
+
+.div-80 {
+    display: flex;
+    align-items: baseline;
+    gap: 35px;
+    margin-top: 17px;
+    margin-bottom: 38px;
+}
+
+.div-76 {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 37px;
+}
+
+.img-time-4 {
+    height: 9rem;
+    width: 10rem;
+    border-radius: 10px;
+}
+
+.img-tick {
+    max-width: 10px;
+    width: 100%;
+}
+
+.p-taylor-4 {
+    color: black;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.p-vip {
+    color: #505050;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.p-price {
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.div-78 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 13px;
+}
+
+.div-79 {
+    display: flex;
+    align-items: center;
+}
+
+.img-bin {
+    max-width: 16px;
+}
+
+.img-bin:hover {
+    cursor: pointer;
+}
+
+.btn-plus {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.btn-total {
+    border: solid black 1px;
+    padding-inline: 9px;
+    gap: 13px;
+}
+
+.btn-minus {
+    font-size: 37px;
+    padding-bottom: 6px;
+}
+
+.btn-plus {
+    padding-bottom: 4px;
+}
+
+.div-79 {
+    gap: 44px;
+}
+
+.div-82 {
+    display: flex;
+}
+
+.div-81 {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.div-75 {
+    border-bottom: solid darkgray 1px;
+    padding-bottom: 39px;
+}
+
+.p-subtotal {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.div-83 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid darkgray 1px;
+    padding-bottom: 39px;
+    padding-top: 39px;
+}
+
+.div-85 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.div-86 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.p-total-45 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.p-price-800 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.btn-check {
+    background-color: #3337BF;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    color: white;
+    margin-bottom: 4rem;
+    padding-block: 12px;
+    font-size: 14px;
+    border-radius: 12px;
+    padding-left: 106px;
+    padding-right: 103px;
+    margin-top: 50px;
+}
+
+.btn-check:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.img-right {
+    padding-left: 11px;
+}
+
+.div-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-1 {
+    border: solid #242B35 1.5px;
+    padding-inline: 7px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.p-choose {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.div-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.div-120 {
+    border: solid #242B35 1.5px;
+    padding-inline: 5px;
+    border-radius: 50%;
+    padding-block: 5px;
+}
+
+.div-2 {
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 2rem;
+}
+
+.img-line-1 {
+    height: fit-content;
+    margin-bottom: 24px;
+}
+
+.btn-4 {
+    border: solid #242B35 1.5px;
+    padding-inline: 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.div-3 {
+    margin-inline: auto;
+    max-width: 80rem;
+    margin-bottom: 4rem;
+}
+
+.img-banner {
+    width: 100%;
+    margin-top: 2px;
+}
+
+
+
+
+
+
+
+@media(max-width:738px) {
+    .p-ticket-2 {
+        font-size: 10px;
+    }
+
+    .dollor {
+        font-size: 11px;
+    }
+
+    .p-taylor {
+        font-size: 14px;
+    }
+}
+
+
+@media(max-width:640px) {
+
+
+    .p-taylor {
+        font-size: 14px;
+    }
+
+    .div-75 {
+        padding-bottom: 9px;
+    }
+
+    .p-none {
+        font-size: 15px;
+    }
+
+    .div-2 {
+        margin-bottom: 1rem;
+    }
+
+    .p-none-2 {
+        font-size: 10px;
+    }
+
+    .p-ticket-3 {
+        font-size: 13px;
+    }
+
+    .div-80 {
+        gap: 15px;
+    }
+
+    .div-74 {
+        padding-inline: 5px;
+        padding-block: 1px;
+    }
+
+    .div-main {
+        gap: 9px;
+        margin-bottom: -16px;
+    }
+
+    .img-tick {
+        max-width: 8px;
+    }
+
+    .img-time-4 {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .p-taylor-4 {
+        font-size: 9px;
+    }
+
+    .p-vip {
+        font-size: 7px;
+        max-width: 5rem;
+        text-wrap-mode: nowrap;
+    }
+
+    .p-price {
+        font-size: 8px;
+    }
+
+    .img-bin {
+        max-width: 8px;
+        padding-bottom: 2px;
+    }
+
+    .btn-plus {
+        font-size: 12px;
+        padding-bottom: 4px;
+    }
+
+    .div-83 {
+        padding-bottom: 14px;
+        padding-top: 5px;
+    }
+
+    .btn-total {
+        font-size: 7px;
+        padding-inline: 4px;
+    }
+
+    .btn-minus {
+        font-size: 18px;
+        padding-bottom: 6px;
+    }
+
+    .div-4 {
+        margin-inline: 9px;
+        padding-inline: 0;
+        margin-bottom: 60px;
+
+    }
+
+    .div-75 {
+        margin-top: -43px;
+    }
+
+    .div-80 {
+        flex-direction: column;
+    }
+
+    .p-ticket-2 {
+        font-size: 6px;
+    }
+
+    .dollor {
+        font-size: 7px;
+    }
+
+    .div-79 {
+        gap: 14px;
+    }
+
+    .div-78 {
+        padding-left: 6px;
+        gap: 2px;
+    }
+
+    .p-subtotal {
+        font-size: 9px;
+    }
+
+    .p-total-45 {
+        font-size: 12px;
+    }
+
+    .p-price-800 {
+        font-size: 12px;
+    }
+
+    .img-right {
+        padding-left: 6px;
+        max-width: 14px;
+    }
+
+    .btn-check {
+        background-color: #3337BF;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        color: white;
+        margin-bottom: 1rem;
+        padding-block: 8px;
+        font-size: 10px;
+        border-radius: 12px;
+        padding-left: 36px;
+        padding-right: 33px;
+        margin-top: 23px;
+    }
+
+    .div-28 {
+        padding-block: 3px;
+    }
+
+    .div-27 {
+        gap: 0px;
+        margin-top: 2px;
+    }
+
+    .game {
+        top: 249px;
+        left: 4px;
+        width: 167px;
+        padding-left: 7px;
+        gap: 31px;
+        padding-block: 3px;
+    }
+
+    .p-choose {
+        font-size: 9px;
+        text-wrap-mode: nowrap;
+
+    }
+
+    .img-line-1 {
+        width: 40px;
+
+    }
+
+    .btn-1 {
+        font-size: 9px;
+        padding-inline: 5px;
+    }
+
+    .btn-4 {
+        font-size: 9px;
+        padding-inline: 4px;
+    }
+
+    .p-taylor {
+        font-size: 17px;
+    }
+
+    .p-date {
+        font-size: 11px;
+    }
+
+    .p-location {
+        font-size: 9px;
+    }
+
+    .btn-right {
+        font-size: 9px;
+        padding-inline: 8px;
+        padding-block: 4px;
+        gap: 5px;
+    }
+
+    .img-time {
+        max-width: 16px;
+    }
+
+    .img-location {
+        max-width: 16px;
+    }
+
+    .img-right {
+        max-width: 7px;
+    }
+
+    .div-11 {
+        gap: 20px;
+    }
+
+
+    .p-choose-2 {
+        font-size: 17px;
+    }
+    
+    .div-120 {
+        padding-inline: 3px;
+        padding-block: 3px;
+    }
+
+    .p-all {
+        font-size: 10px;
+    }
+
+    .div-12 {
+        margin-top: 2.5rem;
+    }
+
+    .div-17 {
+        height: 127px;
+    }
+
+
+    .p-date-2 {
+        font-size: 11px;
+    }
+
+
+    .p-day {
+        padding-left: 11px;
+        font-size: 11px;
+    }
+
+    .p-time {
+        font-size: 11px;
+        max-width: 45px;
+    }
+
+    .p-time {
+        padding-left: 10px;
+    }
+
+
+
+}
